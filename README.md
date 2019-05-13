@@ -43,7 +43,11 @@ The figure below illustrates what will happen when you click on one of the bookm
 
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/desk.png)
 
-### An example video
+### Demo video
+
+Here's a demo video showing Panda making some chess moves. Behind the scene a Blockly-generated bookmarklet orchestrates Desk. There are only 2-3 predefined tasks in the list (for opening and closing the gripper and for driving to the A1 position on the board). All other moves are generates dynamically. You can see this in the video whenever the robot is waiting for something--apparently thinking about the next move. During this time, a relative motion task is created automatically in Desk and configured with the parameters of the chess move--all relative to the tought-in A1 position.
+
+Check out the video here: https://drive.google.com/file/d/1y_DA1puLOhRJROA1YBQ5Qt8xgNJ0bcaq/view?usp=sharing
 
 ### What's next?
 
