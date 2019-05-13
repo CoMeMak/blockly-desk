@@ -25,10 +25,26 @@ There are two **Task** blocks and two **Move** blocks having the following capab
 * The first Move block will creat a new task in Desk, add a **Relative Motion** app to it, and configure it so as to carry out the desired relative motion. By default we configure it to use the end effector (EE) frame of reference.
 * The second Move task will use variables for x,y,z. This allows you to programatically move to places where the arm has never been before! No teach-in required. 
 
-**Note:** The Move blocks will generate new tasks in Desk. Their names will reflect the x,y,z coordinates of the movement. If a task with that name already exists in Desk, then no additional task will be created since it is assumed that it will do the job. This situation will occur whenever you call that same relative move task multiple times in a program or when some other program has already created it. At some point, however, you might need to delete some of the "zombie" tasks from the list for the purpose of restoring order.  
+**Note:** The Move blocks will generate new tasks in Desk. Their names will reflect the x,y,z coordinates of the movement. If a task with that name already exists in Desk, then no additional task will be created since it is assumed that it will do the job. This situation will occur whenever you call that same relative move task multiple times in a program or when some other program has already created it. At some point, however, you might need to delete some of the "zombie" tasks from the list for the purpose of restoring the world order.  
 
 ### Generating the bookmarklet
 
+Click on the red button on the upper-right side of Blockly. This will generate a link, as shown in the picture below, which you can drag to the bookmarks bar. This is the bookmarklet containing the JavaScript code to be injected into Desk. You can have a look at it by copying its content and pasting it into a code editor, like Notepad++. Save the file using the .js extension for syntax highlighting. 
+
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/blockly.png)
 
+### Executing the program contained in the bookmarklet
+
+Now open another browser tab and type robot.franke.de (or just switch to it if it's already open). To run the program, the safety button should not be pushed down and the robot should be initialized. Then make sure you are connected to the Internet. This is needed to download the jQuery library on the fly. jQuery is used by the generated code to trigger tasks and actions in Desk. 
+
+The figure below illustrates what will happen when you click on one of the bookmarklets. The JavaScript program generated in Blockly will execute the tasks in a sequence, by loading them and then programatically clicking on the **RUN** button in Desk by triggering a click event on a specific HTML item. Behind the scenes, a state machine will monitor this button to determine whether the current task has finished before calling another one.
+
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/desk.png)
+
+### What's next?
+
+If you get it running, Blockly-Desk will enable you to use the full palette of program structures offered in Blockly by default and create blocks of your own. This is described in detail on the Blockly website (https://developers.google.com/blockly/). If you develop a new block, why not share it with the community? You can do it using JSFiddle (https://jsfiddle.net/), for example, and then let us know somehow about it.
+
+### A closing word
+
+
