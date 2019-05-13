@@ -1,5 +1,5 @@
 # Blockly-Desk
-Blockly-Extention for Franka Emika Desk
+## A Blockly-Extention for Franka Emika Desk
 
 Blockly is a visual programming tool developed by Google for enabling people to learn the basics of computer programming. Desk is the visual programming environment provided by Franka Emika for enabling the teach-in of their Panda collaborative robot (short cobot).
 
@@ -9,7 +9,11 @@ The Blockly-Desk extension enables Panda programmers to leverage Desk and the ex
 
 The working principle is that of JavaScript code generation using Blockly and injection into Desk via a so-called bookmarklet (https://en.wikipedia.org/wiki/Bookmarklet). A bookmarklet is a browser bookmark containing JavaScript code, which can be injected into the currently opened webside in a browser tab. Since Desk is a web-based application, the bookmarklet technique can also be used to manipulate the HTML elements and events used by Desk to enable the creation, configuration, and orchestration of tasks and apps. Think of is as of a macro-style way of automating some of the tasks one would have to carry out manually and repeatedly for some purpose on a website, such as editing, clicking away unwanted content, or priventing it alltogether. This programming style is currently used, for example, to test websites and there are entire test-suites, which build upon this simple code injection and meta-orchestration technique--not to mention the well-known Add Blocker or Mendeley's bookmarking tool (https://www.mendeley.com/reference-management/web-importer#id_3).   
 
-Here's how it's supposed to work:
+## Here's how it's supposed to work:
+
+Download blockly-desk.zip, then unzip it, find **your_folder/blockly/demos/code/index.html**, and open it in a browser (currently, only tested in Chrome).
+  
+  
 
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/blockly.png)
 
