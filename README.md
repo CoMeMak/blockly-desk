@@ -25,6 +25,8 @@ There are two **Task** blocks and two **Move** blocks having the following capab
 * The first Move block will creat a new task in Desk, add a **Relative Motion** app to it, and configure it so as to carry out the desired relative motion. By default we configure it to use the end effector (EE) frame of reference.
 * The second Move task will use variables for x,y,z. This allows you to programatically move to places where the arm has never been before! No teach-in required. 
 
+![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/blocks.png)
+
 **Note:** The Move blocks will generate new tasks in Desk. Their names will reflect the x,y,z coordinates of the movement. If a task with that name already exists in Desk, then no additional task will be created since it is assumed that it will do the job. This situation will occur whenever you call that same relative move task multiple times in a program or when some other program has already created it. At some point, however, you might need to delete some of the "zombie" tasks from the list for the purpose of restoring the world order.  
 
 ### Generating the bookmarklet
