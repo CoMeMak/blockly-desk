@@ -11,4 +11,6 @@ The working principle is that of JavaScript code generation using Blockly and in
 
 Here's how it's supposed to work:
 
-![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/desk.png)
+![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/blockly.png =350x)
+
+![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/desk.png =350x)
