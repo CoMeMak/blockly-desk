@@ -15,6 +15,8 @@ The working principle is that of JavaScript code generation using Blockly and in
 
 Download blockly-desk.zip, then unzip it, find **your_folder/blockly/demos/code/index.html**, and open it in a browser (currently, only tested in Chrome).
 
+Alternatively, you can use this online Version: http://blockly-desk.comemak.at
+
 Under the menu item "Franka" you'll find a choice of five blocks (disregard the first block called **Precondition** for now):
 
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/franka_tasks.png)  
