@@ -39,7 +39,7 @@ Click on the red button on the upper-right side of Blockly. This will generate a
 
 ### Executing the program contained in the bookmarklet
 
-Now open another browser tab and type robot.franke.de (or just switch to it if it's already open). To run the program, the safety button should not be pushed down and the robot should be initialized. Then make sure you are connected to the Internet. This is needed to download the jQuery library on the fly. jQuery is used by the generated code to trigger tasks and actions in Desk. 
+Now open another browser tab and type robot.franke.de (or just switch to it if it's already open). To run the program, the safety button should not be pushed down and the robot should be initialized. Then make sure you are connected to the Internet. This is needed to download the jQuery library on the fly. jQuery (https://jquery.com/) is used by the generated code to trigger tasks and actions in Desk. 
 
 The figure below illustrates what will happen when you click on one of the bookmarklets. The JavaScript program generated in Blockly will execute the tasks in a sequence, by loading them and then programmatically clicking on the **RUN** button in Desk by triggering a click event on a specific HTML item. Behind the scenes, a state machine will monitor this button to determine whether the current task has finished before calling another one.
 
