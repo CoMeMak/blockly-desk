@@ -22,7 +22,7 @@ Under the menu item "Franka" you'll find a choice of five blocks (disregard the 
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/franka_tasks.png)  
 
 There are two **Task** blocks and two **Move** blocks having the following capabilities:
-* The first Task block is used to trigger an existing Task created in Desk. Just type in the name of the desired task in the field (case sensitive--I think).
+* The first Task block is used to trigger an existing Task created in Desk. Just type in the name of the desired task in the field (case sensitive).
 * The second Task block can be used for the same purpose but here you need to define a "pattern" variable containing the name of the task instead of a fixed string. This is useful when varying the task names within a loop, for example. 
 * The first Move block will create a new task in Desk, add a **Relative Motion** app to it, and configure it so as to carry out the desired relative motion. By default we configure it to use the end effector (EE) frame of reference.
 * The second Move task will use variables for x,y,z. This allows you to programmatically move to places where the arm has never been before! No teach-in required. 
@@ -45,11 +45,13 @@ The figure below illustrates what will happen when you click on one of the bookm
 
 ![alt text](https://raw.githubusercontent.com/comemak/blockly-desk/master/desk.png)
 
-### Demo video
+### Demo video and conference paper
 
 Here's a demo video showing Panda making some chess moves. Behind the scene a Blockly-generated bookmarklet orchestrates Desk. There are only 2-3 predefined tasks in the list (for opening and closing the gripper and for driving to the A1 position on the board). All other moves are generates dynamically. You can see this in the video whenever the robot is waiting for something--apparently thinking about the next move. During this time, a relative motion task is created automatically in Desk and configured with the parameters of the chess move--all relative to the thought-in A1 position.
 
 Check out the video here: https://drive.google.com/file/d/1y_DA1puLOhRJROA1YBQ5Qt8xgNJ0bcaq/view?usp=sharing
+
+And here is a conference paper describing the approach in more detail: https://github.com/CoMeMak/blockly-desk/raw/master/Blockly-Desk-CIRP-CMS.pdf
 
 ### What's next?
 
